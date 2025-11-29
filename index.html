@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বিনামূল্যে ১০০০ টাকা দাবি করুন</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font (Tailwind default) and ensure clean Bengali rendering --><style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #f0fdf4; /* Light Green background */
+        }
+        /* Custom button styling for a more attractive CTA */
+        .claim-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(234, 88, 12, 0.5), 0 4px 6px -2px rgba(234, 88, 12, 0.2);
+        }
+        .claim-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 20px -5px rgba(234, 88, 12, 0.7), 0 6px 8px -3px rgba(234, 88, 12, 0.4);
+        }
+        /* Animation for the Taka sign */
+        @keyframes bounce-taka {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .animate-bounce-taka {
+            animation: bounce-taka 1.5s infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg bg-white rounded-3xl shadow-2xl p-6 sm:p-10 text-center border-t-8 border-amber-500 transform transition duration-500 hover:scale-[1.01]">
+        
+        <!-- Header Section --><div class="mb-8">
+            <!-- Replaced SVG icon with Taka sign and added bounce animation --><div class="w-16 h-16 text-amber-500 mx-auto text-6xl font-black animate-bounce-taka" style="line-height: 1;">
+                ৳
+            </div>
+            <!-- Title in Bengali --><h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mt-4 leading-tight">
+                আপনার বিনামূল্যে ১০০০ টাকা অপেক্ষা করছে!
+            </h1>
+            <!-- Subtitle/Urgency Text in Bengali --><p class="text-lg text-gray-600 mt-3">
+                সময় সীমিত! এখনই আপনার পুরস্কার নিশ্চিত করুন।
+            </p>
+        </div>
+
+        <!-- Prize Display --><div class="bg-amber-100 p-4 sm:p-6 rounded-2xl mb-8 border-2 border-amber-300">
+            <p class="text-2xl font-bold text-amber-700">
+                পুরস্কার:
+            </p>
+            <p class="text-5xl sm:text-7xl font-black text-amber-600 mt-2">
+                ৳১০০০
+            </p>
+        </div>
+
+        <!-- Claim Button (CTA) --><!-- The button redirects to the specified example link --><a href="https://exmple.com" 
+           class="claim-button w-full inline-block py-4 px-8 text-xl font-bold text-white bg-amber-600 rounded-xl hover:bg-amber-700 focus:outline-none focus:ring-4 focus:ring-amber-300 focus:ring-opacity-75 uppercase tracking-wider transition duration-300 ease-in-out transform hover:scale-[1.03]"
+           role="button">
+            <!-- Button Text in Bengali --><span class="inline-block transform hover:rotate-2 transition duration-150">
+                🎁 এখনই দাবি করুন 🎁
+            </span>
+        </a>
+
+        <!-- Footer/Disclaimer --><p class="text-xs text-gray-500 mt-6 pt-4 border-t border-gray-100">
+            শর্তাবলী প্রযোজ্য। অফারটি শুধুমাত্র আজকের জন্য বৈধ।
+        </p>
+
+    </div>
+
+</body>
+</html>
+
